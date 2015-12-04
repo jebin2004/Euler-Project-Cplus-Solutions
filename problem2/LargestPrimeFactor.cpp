@@ -1,13 +1,13 @@
 #include "LargestPrimeFactor.h"
 
-int LargestPrimeFactor::findLargestPrimeFactor(int x)
+long long LargestPrimeFactor::findLargestPrimeFactor(long long x)
 {
-    for(int i=x; i>0; i--)
+    for(long long i=600851475143; i>0; i--)
     {
 	    if(x%i==0)
 	    {
             int flag = 0;
-	        for(int j=2;j<=i/2;++j)
+	        for(long long j=2;j<=i/2;++j)
 	        {
 	            if(i%j==0)
 	            {

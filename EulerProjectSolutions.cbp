@@ -33,8 +33,12 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="main.cpp" />
-		<Unit filename="problem1/MultiplesOf3And5.cpp" />
-		<Unit filename="problem1/MultiplesOf3And5.h" />
+		<Unit filename="problem1/MultiplesOf3Or5.cpp" />
+		<Unit filename="problem1/MultiplesOf3Or5.h" />
+		<Unit filename="problem2/LargestPrimeFactor.cpp" />
+		<Unit filename="problem2/LargestPrimeFactor.h" />
+		<Unit filename="problem3/EvenFibonacci.cpp" />
+		<Unit filename="problem3/EvenFibonacci.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

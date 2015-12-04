@@ -1,4 +1,4 @@
 class LargestPrimeFactor {
     public:
-        int findLargestPrimeFactor(int x);
+        long long findLargestPrimeFactor(long long x);
 };
