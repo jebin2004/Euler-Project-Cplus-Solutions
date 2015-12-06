@@ -1,26 +1,19 @@
 #include "LargestPrimeFactor.h"
 
-long long LargestPrimeFactor::findLargestPrimeFactor(long long x)
+long long LargestPrimeFactor::findLargestPrimeFactor(long long number)
 {
-    for(long long i=600851475143; i>0; i--)
-    {
-	    if(x%i==0)
-	    {
-            int flag = 0;
-	        for(long long j=2;j<=i/2;++j)
-	        {
-	            if(i%j==0)
-	            {
-	                flag= 1;
-	                break;
-	            }
+    int x;
+    for(int i = 2; i * i<= number; i++){
+            if(number % i == 0){
+                while(number % i == 0){
+                    number = number/i;
+                    x = i;
+                }
             }
-            if(flag==0)
-            {
-                return i;
-                break;
-            }
-	    }
-	}
-	return 0;
+		}
+        if(number != 1){
+            return number;
+        } else {
+            return x;
+        }
 }
